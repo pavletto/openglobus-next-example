@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
 import {useGlobeContext} from "@openglobus/openglobus-react";
+import './Button.css'
 
-export  const Button = () => {
+export const Button = () => {
     const {globe} = useGlobeContext()
     const onClick = () => {
         console.log(globe)
@@ -10,5 +11,5 @@ export  const Button = () => {
         console.log(globe)
     }, [globe]);
 
-    return <button onClick={onClick}>log globe</button>
+    return <button className={'button'} onClick={onClick}>log globe</button>
 }

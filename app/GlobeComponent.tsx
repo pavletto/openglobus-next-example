@@ -1,12 +1,17 @@
 import React from 'react';
-import { GlobeContextProvider, Globe, GeoVideo } from "@openglobus/openglobus-react";
+import {GeoVideo, Globe, GlobeContextProvider} from "@openglobus/openglobus-react";
 
 import "@openglobus/og/css/og.css";
-import {Hurricane} from "next/dist/compiled/@next/font/dist/google";
+import {Button} from "@/app/Button";
+
 const GlobeComponent = () => {
+
     return (
         <GlobeContextProvider>
+
+            <Button></Button>
             <Globe>
+
                 <GeoVideo
                     corners={[
                         [
